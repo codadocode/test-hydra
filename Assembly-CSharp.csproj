@@ -52,12 +52,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Level\GridController.cs" />
-     <Compile Include="Assets\Scripts\Player\SnakeController.cs" />
+     <Compile Include="Assets\Scripts\Level\FoodController.cs" />
      <Compile Include="Assets\Scripts\Misc\Timer.cs" />
      <Compile Include="Assets\Scripts\Player\InputController.cs" />
+     <Compile Include="Assets\Scripts\Level\GridController.cs" />
+     <Compile Include="Assets\Scripts\Player\SnakeController.cs" />
      <Compile Include="Assets\Scripts\Player\SnakeBody.cs" />
-     <Compile Include="Assets\Scripts\Level\FoodController.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

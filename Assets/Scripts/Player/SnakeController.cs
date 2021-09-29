@@ -113,7 +113,8 @@ public class SnakeController : SnakeBody
 
     public void IncreaseSnakeSize()
     {
-        SnakeBody snakeBody = Instantiate(this._snakePrefab, transform.position, transform.rotation).GetComponent<SnakeBody>();
+        SnakeBody previousSnakeBody = this._snakeBody[this._snakeBody.Count - 1];
+        SnakeBody snakeBody = Instantiate(this._snakePrefab, previousSnakeBody.transform.position, previousSnakeBody.transform.rotation).GetComponent<SnakeBody>();
         Vector2 actualPosition = new Vector2(snakeBody.transform.position.x, snakeBody.transform.position.z);
         snakeBody.ActualPosition = actualPosition;
         this._snakeBody.Add(snakeBody);
